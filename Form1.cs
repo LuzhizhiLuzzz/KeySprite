@@ -36,7 +36,7 @@ namespace KeySprite
             DLLPath = ConfigurationManager.AppSettings["DLLPath"].ToString();
             sound = ConfigurationManager.AppSettings["sound"].ToString();
             //reg_hotkey();
-            //LoadDllFile(DLLPath);
+            LoadDllFile(DLLPath);
             //comboBox_Init();
             //Map_Init();
             //dd = new CDD();
