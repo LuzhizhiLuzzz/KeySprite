@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\KeySprite\bin\Debug\KeySprite.exe.config
+C:\Users\user\Desktop\KeySprite\bin\Debug\KeySprite.exe
+C:\Users\user\Desktop\KeySprite\bin\Debug\KeySprite.pdb
+C:\Users\user\Desktop\KeySprite\obj\Debug\KeySprite.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\KeySprite\obj\Debug\KeySprite.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\KeySprite\obj\Debug\KeySprite.Form1.resources
+C:\Users\user\Desktop\KeySprite\obj\Debug\KeySprite.Properties.Resources.resources
+C:\Users\user\Desktop\KeySprite\obj\Debug\KeySprite.csproj.GenerateResource.cache
+C:\Users\user\Desktop\KeySprite\obj\Debug\KeySprite.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\KeySprite\obj\Debug\KeySprite.exe
+C:\Users\user\Desktop\KeySprite\obj\Debug\KeySprite.pdb
