@@ -35,11 +35,11 @@ namespace KeySprite
             KeyInterval = ConfigurationManager.AppSettings["Interval"].ToString();
             DLLPath = ConfigurationManager.AppSettings["DLLPath"].ToString();
             sound = ConfigurationManager.AppSettings["sound"].ToString();
-            //reg_hotkey();
+            comboBox_Init();
+            Map_Init();
             LoadDllFile(DLLPath);
-            //comboBox_Init();
-            //Map_Init();
-            //dd = new CDD();
+            dd = new CDD();
+            reg_hotkey(KeyToCode[selectStr1]);
 
         }
 
@@ -123,9 +123,9 @@ namespace KeySprite
          int id
         );
 
-        void reg_hotkey()
+        void reg_hotkey(int keycode)
         {
-            RegisterHotKey(this.Handle, 80, 0, Keys.F12);
+            RegisterHotKey(this.Handle, 80, 0, (Keys)keycode);
         }
 
         void unreg_hotkey()
@@ -150,33 +150,17 @@ namespace KeySprite
             switch (msg.WParam.ToInt32())
             {
                 case 80:
-                    Fun80();
+                    KeyEvent();
                     break;
-                case 90:
-                    Fun90();
-                    break;
+   
             }
         }
 
-        private void Fun80()
+        private void KeyEvent()
         {
-            dd.str("Keyboard char [A-Za_z] {@$} ");
+
         }
 
-        private void Fun90()
-        {
-            if (dd.key != null)
-            {
-                //CTRL+ALT+DEL
-                dd.key(600, 1);                                      //600 == L.CTRL down
-                dd.key(602, 1);                                      // ALT   down
-                dd.key(706, 1);                                      // DEL   down
-                System.Threading.Thread.Sleep(5);
-                dd.key(706, 2);                                       //up
-                dd.key(602, 2);
-                dd.key(600, 2);
-            }
-        }
 
         #endregion
 
